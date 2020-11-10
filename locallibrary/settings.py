@@ -28,7 +28,10 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '6j_+94%2sy5_w9324ufmk2!irdd4a@
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost:8000'
+    'murmuring-ocean-02632.herokuapp.com',
+]
 
 # Production settings
 CSRF_COOKIE_SECURE = True 
